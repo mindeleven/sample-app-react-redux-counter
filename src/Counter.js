@@ -11,7 +11,7 @@ class Counter extends React.Component {
       count: this.state.count + 1
     });
     */
-    this .props.dispatch({ type : INCREMENT });
+    this.props.dispatch({ type : INCREMENT });
   };
 
   decrement = () => {
@@ -20,7 +20,7 @@ class Counter extends React.Component {
       count: this.state.count - 1
     });
     */
-    this .props.dispatch({ type : DECREMENT });
+    this.props.dispatch({ type : DECREMENT });
   };
 
   reset = () => {
@@ -42,7 +42,7 @@ class Counter extends React.Component {
         </div>
       </div>
       <br />
-      <a onClick={this.reset}>reset</a>
+      <button onClick={this.reset}>reset</button>
       </div>
     );
   }
