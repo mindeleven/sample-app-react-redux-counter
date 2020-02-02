@@ -4,7 +4,11 @@ import { createStore } from 'redux';
 import Counter from "./Counter";
 import "./index.css";
 
-function reducer(state, action) {
+const initialState = {
+  count : 0
+}
+
+function reducer(state=initialState, action) {
   console.log('reducer', state, action);
   return state;
 }
